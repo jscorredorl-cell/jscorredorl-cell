@@ -32,7 +32,7 @@ Atención al cliente, ventas y análisis de datos, sobre Google Cloud.
 
 **Seguridad primero:** tus datos no se usan para entrenar modelos, cada agente opera con permisos mínimos, todo queda registrado y una persona siempre puede intervenir.
 
-**Stack:** Python · FastAPI · LangChain / LangGraph · Gemini y Claude · BigQuery · PostgreSQL · React 19 + Vite + TypeScript · Docker · Cloud Build · API Gateway · Google Cloud.
+**Stack:** Python · FastAPI · LangChain / LangGraph · Gemini y Claude · BigQuery · PostgreSQL · DuckDB · React 19 + Vite + TypeScript · Docker · Cloud Build · API Gateway · Google Cloud.
 
 La web incluye un **playground** para probar tres agentes en vivo: profesor de matemáticas, analítica sobre BigQuery y atención al cliente de una tienda demo.
 
@@ -40,7 +40,7 @@ La web incluye un **playground** para probar tres agentes en vivo: profesor de m
 
 ## 🧩 Agentes open source
 
-Tres agentes de ejemplo, completos y documentados, para aprender y reutilizar:
+Cuatro agentes de ejemplo, completos y documentados, para aprender y reutilizar:
 
 ### [Customer Service](https://github.com/jscorredorl-cell/Customer-Service)
 Agente que consulta, cancela y devuelve órdenes. Verifica el estado real de la orden, decide entre cancelar o devolver, **pide confirmación** y registra la solicitud.
@@ -54,6 +54,10 @@ Hazle preguntas a tus datos en lenguaje natural. Explora tus archivos, escribe e
 Hazle preguntas a tus documentos. Busca en tus PDFs y responde con la fuente exacta (capítulo y página); si la respuesta no está, te lo dice.
 `LangGraph` · `PostgreSQL + pgvector` · `Gemini` · `Vertex AI`
 
+### [Subagents](https://github.com/jscorredorl-cell/subagents)
+Hazle preguntas a tus ventas y a tus finanzas. Un manager delega en dos analistas (BI y finanzas), los consulta **en paralelo** cuando la pregunta cruza ambos mundos y une sus cifras en un resumen ejecutivo.
+`LangGraph` · `Multiagente` · `Claude` · `DuckDB`
+
 ---
 
 ## 🛠️ Tecnologías
@@ -66,6 +70,7 @@ Hazle preguntas a tus documentos. Busca en tus PDFs y responde con la fuente exa
 ![Claude](https://img.shields.io/badge/Claude-D97757?logo=anthropic&logoColor=white)
 ![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?logo=googlebigquery&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?logo=duckdb&logoColor=black)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
