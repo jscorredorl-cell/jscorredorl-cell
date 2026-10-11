@@ -40,7 +40,7 @@ La web incluye un **playground** para probar tres agentes en vivo: profesor de m
 
 ## 🧩 Agentes open source
 
-Cuatro agentes de ejemplo, completos y documentados, para aprender y reutilizar:
+Cinco agentes de ejemplo, completos y documentados, para aprender y reutilizar:
 
 ### [Customer Service](https://github.com/jscorredorl-cell/Customer-Service)
 Agente que consulta, cancela y devuelve órdenes. Verifica el estado real de la orden, decide entre cancelar o devolver, **pide confirmación** y registra la solicitud.
@@ -57,6 +57,10 @@ Hazle preguntas a tus documentos. Busca en tus PDFs y responde con la fuente exa
 ### [Subagents](https://github.com/jscorredorl-cell/subagents)
 Hazle preguntas a tus ventas y a tus finanzas. Un manager delega en dos analistas (BI y finanzas), los consulta **en paralelo** cuando la pregunta cruza ambos mundos y une sus cifras en un resumen ejecutivo.
 `LangGraph` · `Multiagente` · `Claude` · `DuckDB`
+
+### [Subagents ADK](https://github.com/jscorredorl-cell/subagents-adk)
+El mismo equipo de analistas, construido con ADK. El root agent **transfiere** cada pregunta al analista correcto y la traza completa (transferencia, SQL y respuesta) queda visible en `adk web` y en Agent Engine.
+`Google ADK` · `Multiagente` · `Gemini` · `DuckDB` · `Vertex AI Agent Engine`
 
 ---
 
